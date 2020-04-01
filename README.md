@@ -77,5 +77,9 @@ To generate the starter code, follow the steps given below
 - Use app.component.html and app.component.ts to write your logic.
 
 ## PROGRESSION #2: STYLING
+Style is missing. Add proper styles to the page. 
+
+## Expected Output:
+![output](https://i1.faceprep.in/ProGrad/ts-lab-day4.png)
 
 Happy Coding ProGrad ❤️!
