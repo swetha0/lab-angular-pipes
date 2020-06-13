@@ -1,0 +1,61 @@
+<div class="container">
+  <h1>Pipes In Angular</h1>
+
+  <div class="event">
+      <h3>Date Pipes</h3>
+      <button class="field" (click)=date()>ClickMe!</button>
+      <p class="field">
+          <a>Full Date: </a> {{CurrentDate |date:'full'}}
+          <br> <a>Short Date: </a> {{CurrentDate |date:'shortDate'}}
+          <br><a>Medium Date: </a> {{CurrentDate |date:'mediumDate'}}
+          <br> <a>Full Date: </a> {{CurrentDate |date:'fullDate'}}
+          <br> <a>Time: </a> {{CurrentDate |date:'hh:mm'}}
+          <br> <a> Time: </a> {{CurrentDate |date:'shortTime'}}
+          <br><a>Time: </a> {{CurrentDate |date:'h:mm:p'}}
+      </p>
+  </div>
+
+
+  <div class="event">
+      <h3>Number Pipes</h3>
+      <p class="field">
+          <a>No Formatting: </a> {{100 }}
+          <br> <a>2 Decimal Place: </a> {{100 | number:'3.2'}}
+
+      </p>
+  </div>
+
+  <div class="event">
+      <h3>Currency Pipes</h3>
+      <input type="text" #currency (ngModel)="number">
+      <button class="field" (click)=numbers(currency.value)>ClickMe!</button>
+      <p class="field">
+          <a>No Formatting: </a> {{number }}
+          <br> <a>USD Doller($): </a> {{number | currency: 'USD'}}
+          <br> <a>USD Doller: </a> {{number | currency :'USD':'USD'}}
+          <br> <a>INR(): </a> {{number | currency :'INR'}}
+          <br> <a>INR: </a> {{number | currency :'INR':'INR'}}
+      </p>
+  </div>
+
+
+  <div class="event">
+      <h3>String Related Pipes</h3>
+      <input type="text" #names (ngModel)="name">
+      <button class="field" (click)=pipes(names.value)>ClickMe!</button>
+      <p class="field">
+          {{"Actual Text: "+name}}
+          <br> {{"Uppercase Text: "+(name | uppercase)}}
+          <br> {{"Lowercase Text: "+(name | lowercase)}}
+      </p>
+  </div>
+
+
+  <div class="event">
+      <h3>Percentage Pipes</h3>
+
+      <p class="field">
+          <a>2 Place Formatting: </a> {{100 | percent:'3.2' }}
+      </p>
+  </div>
+</div>

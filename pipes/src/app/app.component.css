@@ -1,0 +1,27 @@
+.container {
+    margin-left: 40%;
+}
+h1,h3{
+    color: red;
+}
+
+.field {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.event {
+    width: 50%;
+    margin-top: 20px;
+    border: 1px solid lightgray;
+    background-color: whitesmoke;
+    padding-left: 10px;
+}
+
+button {
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+    text-align: center;
+    padding: 2px;
+}
